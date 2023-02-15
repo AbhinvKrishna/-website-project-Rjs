@@ -1,0 +1,51 @@
+.contact {
+    background-color: rgb(243, 239, 239);
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.bgdiv {
+    display: flex;
+    height: 70vh;
+}
+
+.bgimage {
+
+    opacity: 0.4;
+    height: 100%;
+    display: flex;
+}
+
+.bgimage img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+b {
+    margin-left: 100px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    color: rgb(129, 14, 14);
+    font-size: xx-large;
+    flex-direction: row;
+}
+
+.qrcode {
+    position: absolute;
+    display: flex;
+    width: 450px;
+
+}
+
+.qrcode img{
+    width: 400px;
+    margin-right: 10px;
+    display: flex;
+}

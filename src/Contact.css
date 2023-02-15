@@ -1,0 +1,61 @@
+.contact {
+    background-color: rgb(243, 239, 239);
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.bgdiv {
+    display: flex;
+    height: 70vh;
+}
+
+.bgimage {
+
+    opacity: 0.4;
+    height: 100%;
+    display: flex;
+}
+
+b {
+    margin-left: 100px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    color: rgb(129, 14, 14);
+    font-size: xx-large;
+    flex-direction: row;
+}
+
+.number1 {
+    position: absolute;
+    display: flex;
+    margin-right: 400px;
+
+}
+
+.number2 {
+    position: absolute;
+    margin-right: 180px;
+    display: flex;
+
+}
+
+.number3 {
+    position: absolute;
+    margin-right: 0px;
+    display: flex;
+
+
+}
+
+.number4 {
+    position: absolute;
+    margin-left: 150px;
+    display: flex;
+}

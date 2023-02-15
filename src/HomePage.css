@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(243, 239, 239);
+}
+
+input[type=text] {
+
+    background-image: url("./Assets/Images/searchBar.png");
+    background-position-y: 2px;
+    background-repeat: no-repeat;
+    background-size: 27px;
+    width: 450px;
+    height: 10px;
+    text-align: center;
+
+
+}
+
+.image {
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+
+    margin-left: 48%;
+    display: flex;
+    justify-content: center;
+    width: 240px; 
+    cursor: pointer;
+}
+
+
+
+.fake-input input {
+    border: none;
+    background-color: #fff;
+    width: 500px;
+    height: 30px;
+    box-sizing: border-box
+}
+
+label {
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.text {
+    padding: 10px;
+    font-size: 18px;
+}

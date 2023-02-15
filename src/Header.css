@@ -1,0 +1,33 @@
+.header-nav{
+    background-color: rgb(243, 239, 239);
+    margin: 4px;
+      display: flex;
+      justify-content: space-between;
+
+      
+}
+.header-ul{
+    display:flex;
+    justify-content:flex-end;
+}
+.button{
+    width: 70px;
+    padding: 10px;  
+    cursor:pointer;
+    color: white;
+    display:flex;
+    justify-content:center;
+    border-radius: 15px;
+    background:orangered;
+    
+}
+
+.text{
+    cursor: pointer;
+}
+
+.menu img{
+ margin-left: 10px;
+    width:35px;
+    height: 35px;
+}
