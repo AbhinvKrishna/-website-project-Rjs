@@ -9,8 +9,8 @@ function OrderList(props) {
         <div className='cardbase'>
             <div className="box">
                 <div className="products">
-                <img className='water' src={props.image3} alt="" />
-                <img className='kurk' src={props.image2} alt="" />
+                <img className='' src={props.image3} alt="" />
+                <img className='' src={props.image2} alt="" />
                 <img className='' src={props.image1} alt="" />
                 </div>
                 <div className="textBox">
@@ -20,8 +20,8 @@ function OrderList(props) {
             </div>
             <div className="box">
                 <div className="products">
-                <img className='water' src={props.image3} alt="" />
-                <img className='kurk' src={props.image2} alt="" />
+                <img className='' src={props.image3} alt="" />
+                <img className='' src={props.image2} alt="" />
                 <img className='' src={props.image1} alt="" />
                 </div>
                 <div className="textBox">
@@ -31,8 +31,8 @@ function OrderList(props) {
             </div>
             <div className="box">
                 <div className="products">
-                <img className='water' src={props.image3} alt="" />
-                <img className='kurk' src={props.image2} alt="" />
+                <img className='' src={props.image3} alt="" />
+                <img className='' src={props.image2} alt="" />
                 <img className='' src={props.image1} alt="" />
                 </div>
                 <div className="textBox">

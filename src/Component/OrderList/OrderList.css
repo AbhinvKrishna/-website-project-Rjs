@@ -21,6 +21,7 @@
     margin-left: 20px;
     display: flex;
     height: 150px;
+    justify-content: center;
 }
 
 
