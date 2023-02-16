@@ -33,7 +33,7 @@ function Card(props) {
     return (
        
             <div className='cardbase'>
-                <div className="box">
+                <div className="box" style={{visibility: props.text==='pepsi'?'visible':'hidden'}}>
                     <img src={imgp} alt="" />
                     <div className="textBox">
                         <div className='text'>P e p s i
@@ -42,7 +42,7 @@ function Card(props) {
                         <button onClick={props.addPepsi}>Add</button>
                     </div>
                 </div>
-                <div className="box">
+                <div className="box" style={{visibility: props.text==='kurkure'?'visible':'hidden'}}>
                     <img className='kurk' src={imgk} alt="" />
                     <div className="textBox">
                         <div className='text'>K u r k u r e
@@ -51,7 +51,7 @@ function Card(props) {
                         <button onClick={props.addKurkure}>Add</button>
                     </div>
                 </div>
-                <div className="box">
+                <div className="box" style={{visibility: props.text==='water'?'visible':'hidden'}}>
                     <img className='water' src={imgw} alt="" />
                     <div className="WatertextBox">
                         <div className='text'>W a t e r
@@ -60,7 +60,7 @@ function Card(props) {
                         <button className='wbtn' onClick={props.addWater}>Add</button>
                     </div>
                 </div>
-                <div className="box">
+                <div className="box" style={{visibility: props.text==='pepsi'?'visible':'hidden'}}>
                     <img src={imgp} alt="" />
                     <div className="textBox">
                         <div className='text'>P e p s i
@@ -69,7 +69,7 @@ function Card(props) {
                         <button onClick={props.addPepsi}>Add</button>
                     </div>
                 </div>
-                <div className="box">
+                <div className="box" style={{visibility: props.text==='pepsi'?'visible':'hidden'}}>
                     <img src={imgp} alt="" />
                     <div className="textBox">
                         <div className='text'>P e p s i
@@ -78,7 +78,7 @@ function Card(props) {
                         <button onClick={props.addPepsi}>Add</button>
                     </div>
                 </div>
-                <div className="box">
+                <div className="box" style={{visibility: props.text==='pepsi'?'visible':'hidden'}}>
                     <img src={imgp} alt="" />
                     <div className="textBox">
                         <div className='text'>P e p s i

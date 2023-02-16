@@ -26,34 +26,45 @@ function App() {
 
   const [price, setPrice] = useState(0);
 
+  //HomePage search functionalities
 
+  const [text, setText] = useState("");
 
+  const inputText = (event) => {
+    setText(event.target.value)
+  }
+
+  const product = () => {
+    setText(text)
+  }
+  
+  //
   const addPepsi = () => {
 
-      setImg1(imgp)
-      setPrice(price + 35)
+    setImg1(imgp)
+    setPrice(price + 35)
 
   }
 
   const addKurkure = () => {
-      setImg2(imgk)
-      setPrice(price + 15)
+    setImg2(imgk)
+    setPrice(price + 15)
 
   }
 
   const addWater = () => {
-      setImg3(imgw)
-      setPrice(price + 10)
+    setImg3(imgw)
+    setPrice(price + 10)
   }
   return (
     <div className='container'>
 
       <Router>
-      <Header/>
+        <Header />
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
-           <Route exact path="/Card" element={<Card addPepsi={addPepsi} addKurkure={addKurkure} addWater={addWater} />} />
-           <Route exact path="/OrderList" element={ <OrderList image1={img1} image2={img2} image3={img3} price={price + "/-"} />} /> 
+          <Route exact path="/" element={<HomePage text={text} inputText={inputText} product={product} />} />
+          <Route exact path="/Card" element={<Card addPepsi={addPepsi} addKurkure={addKurkure} addWater={addWater} text={text} />} />
+          <Route exact path="/OrderList" element={<OrderList image1={img1} image2={img2} image3={img3} price={price + "/-"} />} />
           <Route exact path="/Contact" element={<Contact />} />
           <Route exact path="/Qr" element={<Qr />} />
 
