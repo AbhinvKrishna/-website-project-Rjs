@@ -3,8 +3,6 @@ body {
 }
 
 input[type=text] {
-
-    background-image: url("./Assets/Images/searchBar.png");
     background-position-y: 2px;
     background-repeat: no-repeat;
     background-size: 27px;
@@ -28,7 +26,6 @@ input[type=text] {
     display: flex;
     justify-content: center;
     width: 240px; 
-    cursor: pointer;
 }
 
 
@@ -50,4 +47,11 @@ label {
 .text {
     padding: 10px;
     font-size: 18px;
+}
+
+.searchbar{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 11px;
+    cursor: pointer;
 }
