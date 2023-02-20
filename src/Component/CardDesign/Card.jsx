@@ -33,10 +33,10 @@ function Card(props) {
     return (
 
         <div className='cardbase'>
-            <div style={{visibility: props.text.length !==0?"hidden":"visible"}}>
+           {/*  <div style={{visibility: props.text.length !==0?"hidden":"visible"}}>
                 <h1>Empty Page!</h1>
                 <p>| Please! Search For displaying Your interested items here |</p>
-            </div>
+            </div> */}
             <div className="box" style={{ visibility: props.text === 'pepsi' ? 'visible' : 'hidden' }}>
                 <img src={imgp} alt="" />
                 <div className="textBox">
