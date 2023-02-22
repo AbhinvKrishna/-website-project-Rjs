@@ -7,10 +7,6 @@ import imgw from './OrderListImages/bottle.jpeg'; */
 function OrderList(props) {
     return (
         <div className='cardbase'>
-            <div style={{visibility: props.click.visibility==="hidden"?"visible":"hidden"}}>
-            <h1>Empty Page!</h1>
-            <p>| Please! add to cart For displaying Your oredred items here |</p>
-            </div>
             <div className="box" style={props.click}>
                 <div className="products">
                 <img className='' src={props.image3} alt="" />
