@@ -70,8 +70,10 @@ function App() {
 
   return (
     <div className='container'>
-
-      <Router>
+     {/*  <Header/>
+      <Card/>
+ */}
+     <Router>
         <Header />
         <Routes>
           <Route exact path="/" element={<HomePage text={text} inputText={inputText} product={product} />} />
@@ -81,7 +83,7 @@ function App() {
           <Route exact path="/Qr" element={<Qr />} />
 
         </Routes>
-      </Router>
+      </Router> 
     </div>
 
   );

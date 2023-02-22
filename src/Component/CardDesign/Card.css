@@ -1,5 +1,5 @@
 .cardbase {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -8,35 +8,35 @@
    
 }
 
-.box {
+.cardbox {
     width: 200px;
-    margin: 10px 10px;
-    padding: inherit;
-    background-color: white;
+    margin: 10px 30px;
     border-radius: 10px;
     height: 300px;
+    background: white;
     display: flex;
     flex-direction: column;
 }
 
-.box img {
-    border-radius: 20px;
-    height: 200px;
+
+ .txtbase {
+    display: flex;
+    flex-direction: column;
 }
- .textBox {
+
+.items{
     display: flex;
     justify-content: space-between;
+    margin-left: 15px;
 }
 
 .text {
     color: orangered;
     margin: 0px 10px;
     font-size: x-large;
-    display: flex;
-    flex-direction: column;
 }
 
-button {
+.cartbtn {
     padding: 0px 20px;
     margin-right: 15px;
     border-radius: 25px;
@@ -50,12 +50,17 @@ button {
     width: 70px;
 }
 
-.price {
+.money {
+    font-size: 20px;
     color: black;
+   font-weight: bolder;
+
 }
 
 .kurk {
-    width: 230px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .water {
