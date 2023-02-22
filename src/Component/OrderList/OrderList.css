@@ -1,4 +1,4 @@
-.cardbase {
+.Orderbase {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,20 +6,6 @@
     align-items: center;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 200px;
-    margin-left: 180px;
-    margin-bottom: auto;
-    text-decoration: underline;
-}
-
-p{
-    margin-bottom: 150px;
-    margin-left: 140px;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 @media(max-width:700px){
     h1{
         font-size: 100px;
@@ -30,7 +16,7 @@ p{
     }
 }
 
-.box{
+.orderbox{
     width: auto;
     height: auto;
     margin: 10px 10px;
@@ -49,28 +35,38 @@ p{
 }
 
 
-.textBox {
-    margin-left: 10px;
-    margin-top: 30px;
+.otbox {
+    margin-left: 300px;
     display: flex;
     flex-direction: column;
 
 }
 
-@media(max-width:1120px){
-    .cardbase{
+@media(max-width:720px){
+    .Orderbase{
         width: auto;
         height: auto;
         flex-flow: column;
     }
 
-    .textBox{
+    .orderbox{
         margin-top: 40px;
         margin-left: 10px;
     }
+
+    .otbox{
+        margin-left: 20px;
+    }
+}
+@media(min-width:720px) and (max-width:872px){
+
+    .otbox{
+        margin-left: 80px;
+    }
+
 }
 
-.text {
+.otext {
     color: rgb(0, 0, 0);
     margin: 10px 10px;
     font-size: x-large;
@@ -78,39 +74,11 @@ p{
     flex-direction: column;
 }
 
-button {
-    padding: 0px 20px;
-    margin-right: 15px;
-    border-radius: 25px;
-    font-size: large;
-    color: white;
-    background: #ff4500b0;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
 
-.price {
+.ordprice {
     margin-top: 10px;
     margin-left: 40px;
     font-size: xx-large;
     color: black;
-    display: flex;
-}
-
-.kurk {
-    width: 150px;
-    display: flex;
-}
-
-.water {
-    width: 80px;
-    display: flex;
-    border-radius: 20px;
-
-}
-
-.pepsi {
-    height: 180px;
     display: flex;
 }

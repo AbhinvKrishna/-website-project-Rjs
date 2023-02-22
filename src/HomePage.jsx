@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import './HomePage.css';
 import logo from'../src/Assets/Images/Logo.png';
 //import searchbar from './Assets/Images/searchBar.png'
@@ -8,10 +7,6 @@ import { useNavigate } from 'react-router-dom';
 function HomePage(props){
 
 const navigate=useNavigate();
-
- useEffect(()=>{
-  document.addEventListener('keydown',detectKeyDown)
- },[])
 
  const detectKeyDown=(e)=>{
   if(e.key==="Enter"){
@@ -41,7 +36,7 @@ const navigate=useNavigate();
                 <img src={searchbar} alt="img"   />
                 </Link>   */}      
               </div>
-              <input type="text" className="text" placeholder="Search Products" value={props.text}  onChange={props.inputText}/></td>
+              <input type="text" className="crdinput" placeholder="Search Products" onKeyDown={detectKeyDown} value={props.text}  onChange={props.inputText}/></td>
              
             <td><label >100 Total Products</label></td>
           </tr>

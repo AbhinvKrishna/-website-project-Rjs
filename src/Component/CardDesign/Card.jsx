@@ -14,34 +14,39 @@ function Card(props) {
     return (
 
         <div className='cardbase'>
-            <div className="box" style={{visibility: a.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
+            <div className="cardbox"  style={{visibility: a.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
                 <img src={imgp} alt="" />
-                <div className="textBox">
-                    <div className='text'>P e p s i
-                        <div className="price"><b>₹ 35/-</b></div>
-                    </div>
-                    <button onClick={props.addPepsi}>Add</button>
+                    
+                    <div className="txtbase">
+                    <div className='text'>P e p s i</div>
+                    <div className="items">
+                        <div className="money">₹ 35/-</div>
+                        <button className='cartbtn'onClick={props.addPepsi}>Add</button>
+                        </div>
                 </div>
             </div>
-            <div className="box" style={{visibility: b.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
+            <div className="cardbox"  style={{visibility: b.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
                 <img className='kurk' src={imgk} alt="" />
-                <div className="textBox">
-                    <div className='text'>K u r k u r e
-                        <div className="price"><b>₹ 15/-</b></div>
-                    </div>
-                    <button onClick={props.addKurkure}>Add</button>
+                <div className="txtbase">
+                <div className='text'>K u r k u r e</div>
+                    <div className="items">
+                        <div className="money">₹ 10/-</div>
+                        <button className='cartbtn'onClick={props.addKurkure}>Add</button>
+                        </div>
+                   
                 </div>
             </div>
-            <div className="box" style={{visibility: c.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
+            <div className="cardbox"  style={{visibility: c.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
                 <img className='water' src={imgw} alt="" />
-                <div className="WatertextBox">
-                    <div className='text'>W a t e r
-                        <div className="price"><b>₹ 10/-</b></div>
-                    </div>
-                    <button className='wbtn' onClick={props.addWater}>Add</button>
+                <div className="txtbase">
+                    <div className='text'>W a t e r</div>
+                    <div className="items">
+                        <div className="money">₹ 20/-</div>
+                        <button className='cartbtn'onClick={props.addWater}>Add</button>
+                        </div>                   
+                </div>
                 </div>
             </div>
-        </div>
 
 
 

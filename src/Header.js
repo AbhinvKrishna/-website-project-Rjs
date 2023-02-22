@@ -3,8 +3,17 @@ import React from "react";
 import "./Header.css";
 
 import img from './Assets/Images/menu_icon.png';
-import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 const Header = () => {
+     const navigate=useNavigate()
+    const toOrderList=()=>{
+
+        navigate("/OrderList")
+
+    } 
+
+
+
     return (
         
         <header >
@@ -17,7 +26,7 @@ const Header = () => {
                   
                 </div>
                <div>
-                <Link to="/OrderList"><button className="button">Order</button></Link> 
+                <button  onClick={toOrderList}  className="button">Order</button>
                 </div>                    
                 
                 
