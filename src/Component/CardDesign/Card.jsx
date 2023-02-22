@@ -6,38 +6,15 @@ import imgw from './Cardsimages/bottle.jpeg';
 
 function Card(props) {
 
-    /*   const [img, setImg] = useState(null);
-  
-      const [price, setPrice] = useState(price);
-  
-  
-  
-      const addPepsi = () => {
-  
-          setImg(imgp)
-          setPrice(price + 35)
-  
-      }
-  
-      const addKurkure = () => {
-          setImg(imgk)
-          setPrice(price + 15)
-  
-      }
-  
-      const addWater = () => {
-          setImg(imgw)
-          setPrice(price + 10)
-      } */
+    let a="pepsi"
+    let b="kurkure"
+    let c="water"
+
 
     return (
 
         <div className='cardbase'>
-           {/*  <div style={{visibility: props.text.length !==0?"hidden":"visible"}}>
-                <h1>Empty Page!</h1>
-                <p>| Please! Search For displaying Your interested items here |</p>
-            </div> */}
-            <div className="box" style={{ visibility: props.text === 'pepsi' ? 'visible' : 'hidden' }}>
+            <div className="box" style={{visibility: a.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
                 <img src={imgp} alt="" />
                 <div className="textBox">
                     <div className='text'>P e p s i
@@ -46,7 +23,7 @@ function Card(props) {
                     <button onClick={props.addPepsi}>Add</button>
                 </div>
             </div>
-            <div className="box" style={{ visibility: props.text === 'kurkure' ? 'visible' : 'hidden' }}>
+            <div className="box" style={{visibility: b.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
                 <img className='kurk' src={imgk} alt="" />
                 <div className="textBox">
                     <div className='text'>K u r k u r e
@@ -55,7 +32,7 @@ function Card(props) {
                     <button onClick={props.addKurkure}>Add</button>
                 </div>
             </div>
-            <div className="box" style={{ visibility: props.text === 'water' ? 'visible' : 'hidden' }}>
+            <div className="box" style={{visibility: c.toLowerCase().includes(props.text.toLowerCase())?'visible':'hidden'}}>
                 <img className='water' src={imgw} alt="" />
                 <div className="WatertextBox">
                     <div className='text'>W a t e r
@@ -64,8 +41,6 @@ function Card(props) {
                     <button className='wbtn' onClick={props.addWater}>Add</button>
                 </div>
             </div>
-
-
         </div>
 
 
