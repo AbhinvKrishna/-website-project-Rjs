@@ -19,7 +19,6 @@ const Header = () => {
         <header >
             <div className="container">
     
-    </div>
             <nav className="header-nav">             
             <div className="menu" >
                 <img src={img} alt=""></img>
@@ -33,6 +32,7 @@ const Header = () => {
                 
                 
             </nav>
+            </div>
 
             
         </header>

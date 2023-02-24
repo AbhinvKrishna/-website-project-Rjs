@@ -2,17 +2,36 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
    
 }
 
+.cardscroll{
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+/* .cardscroll::-webkit-scrollbar{
+    width: 100px;
+} */
+
+@media(max-width:1080px){
+    .cardbase{
+        flex-wrap: wrap;
+    }
+    .alertcart{
+        display: flex;
+    }
+}
+
 .cardbox {
     width: 200px;
     margin: 10px 30px;
-    border-radius: 10px;
-    height: 300px;
+    border-radius: 49px 49px 0px 0px;
+    height: 280px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -49,6 +68,9 @@
     height: 30px;
     width: 70px;
 }
+.cartbtn:hover{
+    background-color: blue;
+}
 
 .money {
     font-size: 20px;
@@ -60,16 +82,31 @@
 .kurk {
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 45px;
+}
+
+.pepsi{
+    border-radius: 49px;
 }
 
 .water {
     width: 150px;
     margin-left: 30px;
     height: 200px;
+    border-radius: 48px;
 }
 
 .WatertextBox {
     margin-top: 20px;
    
+}
+
+.alertcart{
+    width: auto;
+    position: absolute;
+    margin-top: 330px;
+    background: black;
+    color: white;
+    border: 1px solid red;
+    border-radius: 10px;
 }

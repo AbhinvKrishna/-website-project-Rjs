@@ -31,6 +31,22 @@ function App() {
     visibility:"hidden"
    })
 
+   //Alert Group
+   const [alertMsgP, setAlertMsgP]=useState({
+    visibility:"hidden"
+   })
+   const [alertMsgK, setAlertMsgK]=useState({
+    visibility:"hidden"
+   })
+   const [alertMsgW, setAlertMsgW]=useState({
+    visibility:"hidden"
+   })
+
+   //
+
+
+  
+
   //HomePage search functionalities
 
   const [text, setText] = useState("");
@@ -49,6 +65,10 @@ function App() {
     setImg1(imgp)
     setPrice(price + 35)
     setClick({visibility:"visible"})
+    setAlertMsgP({visibility:"visible"},setTimeout(()=>{
+      setAlertMsgP({visibility:"hidden"})
+    }, 2000))
+   
 
   }
 
@@ -56,7 +76,9 @@ function App() {
     setImg2(imgk)
     setPrice(price + 15)
     setClick({visibility:"visible"})
-  
+    setAlertMsgK({visibility:"visible"},setTimeout(()=>{
+      setAlertMsgK({visibility:"hidden"})
+    }, 2000))
 
   }
 
@@ -64,20 +86,20 @@ function App() {
     setImg3(imgw)
     setPrice(price + 10)
     setClick({visibility:"visible"})
+    setAlertMsgW({visibility:"visible"},setTimeout(()=>{
+      setAlertMsgW({visibility:"hidden"})
+    }, 2000))
   }
 
  
 
   return (
     <div className='container'>
-     {/*  <Header/>
-      <Card/>
- */}
      <Router>
-        <Header />
+        <Header/>
         <Routes>
           <Route exact path="/" element={<HomePage text={text} inputText={inputText} product={product} />} />
-          <Route exact path="/Card" element={text.length===0?<Carderr/>: <Card addPepsi={addPepsi} addKurkure={addKurkure} addWater={addWater} text={text} />} />
+          <Route exact path="/Card" element={text.length===0?<Carderr/>: <Card addPepsi={addPepsi} addKurkure={addKurkure} addWater={addWater} text={text} alertP={alertMsgP} alertK={alertMsgK} alertW={alertMsgW}/>} />
           <Route exact path="/OrderList" element={click.visibility==="hidden"?<Ordererr/>: <OrderList click={click} image1={img1} image2={img2} image3={img3} price={price + "/-"} />} />
           <Route exact path="/Contact" element={<Contact />} />
           <Route exact path="/Qr" element={<Qr />} />
