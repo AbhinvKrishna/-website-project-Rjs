@@ -1,6 +1,6 @@
 .header-nav{
     background-color: rgb(243, 239, 239);
-    margin: 4px;
+    margin: 20px;
       display: flex;
       justify-content: space-between;
 
@@ -11,14 +11,17 @@
     justify-content:flex-end;
 }
 .button{
-    width: 70px;
-    padding: 10px;  
-    cursor:pointer;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 60px;
+    cursor: pointer;
     color: white;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     border-radius: 15px;
-    background:orangered;
+    background: orangered;
+    border: 1px solid black;
     
 }
 
@@ -27,7 +30,7 @@
 }
 
 .menu img{
- margin-left: 10px;
-    width:35px;
-    height: 35px;
+    margin-left: 18px;
+    width: 45px;
+    height: 43px
 }
