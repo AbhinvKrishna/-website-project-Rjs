@@ -27,20 +27,8 @@ const navigate=useNavigate();
       </div>  
        
       <div className="input">
-        <table>
-          <tr>
-           
-            <td>
-              <div className='searchbar'>
-              {/* <Link to="/Card">              
-                <img src={searchbar} alt="img"   />
-                </Link>   */}      
-              </div>
-              <input type="text" className="crdinput" placeholder="Search Products" onKeyDown={detectKeyDown} value={props.text}  onChange={props.inputText}/></td>
-             
-            <td><label >100 Total Products</label></td>
-          </tr>
-        </table>    
+              <input type="text" className="crdinput" placeholder="Search Products" onKeyDown={detectKeyDown} value={props.text}  onChange={props.inputText}/> 
+              <p>100+ Products</p>
       </div>
       </>
     );

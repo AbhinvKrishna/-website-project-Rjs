@@ -1,10 +1,18 @@
 import React from 'react'
 import './OrderList.css'
+import { useNavigate } from 'react-router-dom'
 /* import imgp from './OrderListImages/pepsico.jpeg';
 import imgk from './OrderListImages/Kurkure1st.webp';
 import imgw from './OrderListImages/bottle.jpeg'; */
 
 function OrderList(props) {
+
+    const cardNav= useNavigate();
+
+    const toCard=()=>{
+        cardNav("/Card")
+    }
+
     return (
         <div className='Orderbase'>
             <div className="orderbox" style={props.click}>
@@ -40,6 +48,8 @@ function OrderList(props) {
                         <div className="ordprice"><b>{props.price}</b></div>                
                 </div>
             </div>
+
+            <button style={{background:"black", color:"white", borderRadius:"10px"}} onClick={toCard}>&larr; Back</button>
            
             </div>
        

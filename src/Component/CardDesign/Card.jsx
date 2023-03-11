@@ -3,12 +3,20 @@ import './Card.css'
 import imgp from './Cardsimages/pepsico.jpeg';
 import imgk from './Cardsimages/Kurkure1st.webp';
 import imgw from './Cardsimages/bottle.jpeg';
+import { useNavigate } from 'react-router-dom';
 
 function Card(props) {
+
+
+    const homeNav = useNavigate();
 
     let a = "pepsi"
     let b = "kurkure"
     let c = "water"
+
+    const toHome=()=>{
+        homeNav("/")
+    }
 
 
     return (
@@ -17,7 +25,6 @@ function Card(props) {
             <div className="cardscroll">
                 <div className="cardbox" style={{ visibility: a.toLowerCase().includes(props.text.toLowerCase()) ? 'visible' : 'hidden' }}>
                     <img src={imgp} alt="" className='pepsi' />
-
                     <div className="txtbase">
                         <div className='text'>P e p s i</div>
                         <div className="items">
@@ -98,6 +105,8 @@ function Card(props) {
                   
                 </div>
             </div>
+
+            <button className='backhome' onClick={toHome}>&larr; Back</button>
 
         </div>
 
